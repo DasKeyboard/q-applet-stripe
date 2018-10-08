@@ -1,0 +1,19 @@
+{
+  "name": "q-applet-stripe",
+  "displayName": "Stripe Alerts",
+  "publisher": "Metadot Corporation",
+  "version": "1.0.0",
+  "description": "Alerts any time a new charge happens on your Stripe account.",
+  "main": "index.js",
+  "author": "Cory Kim",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "daskeyboard-applet": "../npm-qbuzz",
+    "node-storage": "^0.0.7",
+    "path": "^0.12.7",
+    "stripe": "^6.12.1"
+  }
+}
