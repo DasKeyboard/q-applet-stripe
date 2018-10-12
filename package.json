@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "daskeyboard-applet": "^2.2.8",
-    "node-storage": "^0.0.7",
-    "path": "^0.12.7",
     "stripe": "^6.12.1"
   },
   "qConfig": {

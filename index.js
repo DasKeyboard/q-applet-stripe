@@ -1,8 +1,5 @@
 const q = require("daskeyboard-applet");
 const stripeApi = require("stripe");
-const Storage = require('node-storage');
-const Path = require('path');
-const store = new Storage(Path.resolve(".", "local-storage.json"));
 
 class StripeApplet extends q.DesktopApp {
   constructor() {
@@ -10,7 +7,7 @@ class StripeApplet extends q.DesktopApp {
     this.pollingInterval = 60000;
     let apiKey = this.authorization.apiKey;
     this.stripe = stripeApi(apiKey);
-    this.lastChargeTime = store.get("lastChargeTime");
+    this.lastChargeTime = thhis.store.get("lastChargeTime");
   }
 
   async run() {
@@ -32,7 +29,7 @@ class StripeApplet extends q.DesktopApp {
         } else if (charges && charges.data && charges.data.length > 0) {
           console.log(`Got ${charges.data.length} charges.`);
           this.lastChargeTime = charges.data[0].created;
-          store.put("lastChargeTime", this.lastChargeTime);
+          this.store.put("lastChargeTime", this.lastChargeTime);
           q.Send(new q.Signal([
             [new q.Point('#00FF00')]
           ]));
