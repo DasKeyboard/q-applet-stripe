@@ -8,7 +8,7 @@ class StripeApplet extends q.DesktopApp {
   constructor() {
     super();
     this.pollingInterval = 60000;
-    let apiKey = this.config.authorization.apiKey;
+    let apiKey = this.authorization.apiKey;
     this.stripe = stripeApi(apiKey);
     this.lastChargeTime = store.get("lastChargeTime");
   }

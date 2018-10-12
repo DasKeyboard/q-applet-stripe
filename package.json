@@ -15,5 +15,19 @@
     "node-storage": "^0.0.7",
     "path": "^0.12.7",
     "stripe": "^6.12.1"
+  },
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1
+    },
+    "applet": {
+      "defaults": {}
+    },
+    "requirements": {
+      "authorization": "apiKey",
+      "applet": {        
+      }
+    }
   }
 }
