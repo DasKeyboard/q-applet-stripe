@@ -42,4 +42,3 @@ class StripeApplet extends q.DesktopApp {
 }
 
 const stripeApplet = new StripeApplet();
-stripeApplet.start();
