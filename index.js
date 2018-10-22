@@ -30,7 +30,7 @@ class StripeApplet extends q.DesktopApp {
           console.log(`Got ${charges.data.length} charges.`);
           this.lastChargeTime = charges.data[0].created;
           this.store.put("lastChargeTime", this.lastChargeTime);
-          q.Send(new q.Signal({
+          this.sendLocal(new q.Signal({
             points: [[new q.Point('#00FF00')]]
           }));
         } else {
