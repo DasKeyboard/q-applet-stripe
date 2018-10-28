@@ -4,9 +4,14 @@
   "publisher": "Metadot Corporation",
   "version": "1.0.0",
   "description": "Alerts any time a new charge happens on your Stripe account.",
+  "longDescription": "What your keyboard tell you when you get richer and richer when getting new $ on your Stripe account.",
+  "publisherName": "Das Keyboard",
+  "authorName": "Das Keyboard team",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/metadot/q-applet-stripe/issues",
+  "developerRepoUrl": "https://github.com/metadot/q-applet-stripe",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt", 
   "main": "index.js",
-  "author": "Cory Kim",
-  "license": "MIT",
   "scripts": {
     "start": "node ."
   },
