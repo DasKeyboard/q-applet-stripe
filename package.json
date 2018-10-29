@@ -1,6 +1,7 @@
 {
   "name": "q-applet-stripe",
   "displayName": "Stripe Alerts",
+  "officialProductName": "Stripe",
   "publisher": "Metadot Corporation",
   "version": "1.0.0",
   "description": "Alerts any time a new charge happens on your Stripe account.",
