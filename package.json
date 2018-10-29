@@ -5,7 +5,7 @@
   "publisher": "Metadot Corporation",
   "version": "1.0.0",
   "description": "Alerts any time a new charge happens on your Stripe account.",
-  "longDescription": "Watch your Das Keyboard Q tell you are getting richer and richer when there is a new charge on your Stripe account.",
+  "longDescription": "Watch your Das Keyboard Q tell you are getting richer when there is a new charge on your Stripe account.",
   "appUrl": "https://stripe.com",
    "icon": "assets/==============================================icon.png",
   "image": "assets/===========================================image.png",
