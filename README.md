@@ -1,10 +1,20 @@
-# Das Keyboard Applet for Stripe
+# Q Applet: Stripe
 
-Get a visual notification on a Das Keyboard Q series when there is a new sale on your Stripe account.
+Displays a notification on a Das Keyboard Q series for each 
+new sale in a Stripe account.
 
-## Requirements
+## Changelog
 
-A Stripe account, a Q Desktop app and Q series Das Keyboard (www.daskeyboard.com/5q).
+[CHANGELOG.MD](CHANGELOG.md)
+
+## Installation
+
+Requires a Das Keyboard Q Series: www.daskeyboard.com/5q and a Stripe account.
+
+Installation, configuration and uninstallation of applets is done within
+the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
+
+## Docs & Contribute
 
 ## Copyright / License
 
