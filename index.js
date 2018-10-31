@@ -5,9 +5,12 @@ class StripeApplet extends q.DesktopApp {
   constructor() {
     super();
     this.pollingInterval = 60000;
+    this.lastChargeTime = this.store.get("lastChargeTime");
+  }
+
+  async applyConfig() {
     let apiKey = this.authorization.apiKey;
     this.stripe = stripeApi(apiKey);
-    this.lastChargeTime = this.store.get("lastChargeTime");
   }
 
   async run() {
@@ -30,7 +33,7 @@ class StripeApplet extends q.DesktopApp {
           console.log(`Got ${charges.data.length} charges.`);
           this.lastChargeTime = charges.data[0].created;
           this.store.put("lastChargeTime", this.lastChargeTime);
-          this.sendLocal(new q.Signal({
+          this.signal(new q.Signal({
             points: [[new q.Point('#00FF00')]]
           }));
         } else {
@@ -42,3 +45,6 @@ class StripeApplet extends q.DesktopApp {
 }
 
 const stripeApplet = new StripeApplet();
+module.exports = {
+  StripeApplet: StripeApplet
+}
