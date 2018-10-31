@@ -23,7 +23,7 @@ class StripeApplet extends q.DesktopApp {
         gt: this.lastChargeTime
       };
     }
-    console.log("Querying Square API with params:", JSON.stringify(params));
+    console.log("Querying API with params:", JSON.stringify(params));
 
     this.stripe.charges.list(
       params, (err, charges) => {
