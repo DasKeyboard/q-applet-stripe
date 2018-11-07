@@ -3,11 +3,11 @@
   "displayName": "Stripe Alerts",
   "officialProductName": "Stripe",
   "publisher": "Metadot Corporation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alerts any time a new charge happens on your Stripe account.",
   "longDescription": "Watch your Das Keyboard Q tell you are getting richer when there is a new charge on your Stripe account.",
   "appUrl": "https://stripe.com",
-   "icon": "assets/stripe-blue-icon.png",
+  "icon": "assets/stripe-blue-icon.png",
   "image": "assets/===========================================image.png",
   "videoUrl": "",
   "publisherName": "Das Keyboard",
@@ -16,14 +16,14 @@
   "issuesUrl": "https://github.com/metadot/q-applet-stripe/issues",
   "homepage": "https://github.com/DasKeyboard/q-applet-stripe",
   "developerRepoUrl": "https://github.com/metadot/q-applet-stripe",
-  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt", 
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "test": "mocha"
   },
   "dependencies": {
-    "daskeyboard-applet": "^2.7.9",
+    "daskeyboard-applet": "^2.7.13",
     "stripe": "^6.12.1"
   },
   "qConfig": {
