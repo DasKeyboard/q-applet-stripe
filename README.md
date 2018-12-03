@@ -1,6 +1,6 @@
 # Q Applet: Stripe
 
-Displays a notification on a Das Keyboard Q series for each 
+Displays a notification on a Das Keyboard Q series for each
 new sale in a Stripe account.
 
 ## Changelog
