@@ -1,26 +1,35 @@
 {
-  "name": "q-applet-stripe",
+  "name": "daskeyboard-applet--stripe",
   "displayName": "Stripe Alerts",
-  "officialProductName": "Stripe",
-  "publisher": "Metadot Corporation",
   "version": "1.0.1",
   "description": "Alerts any time a new charge happens on your Stripe account.",
   "longDescription": "Watch your Das Keyboard Q tell you are getting richer when there is a new charge on your Stripe account.",
+  "officialProductName": "Stripe",
   "appUrl": "https://stripe.com",
+  "isSingleton": true,
+  "publisher": "Metadot Corporation",
+  "videoUrl": "",
   "icon": "assets/stripe-blue-icon.png",
   "image": "assets/===========================================image.png",
-  "videoUrl": "",
   "publisherName": "Das Keyboard",
   "authorName": "Das Keyboard team",
   "authorUrl": "https://twitter.com/daskeyboard",
-  "issuesUrl": "https://github.com/metadot/q-applet-stripe/issues",
-  "homepage": "https://github.com/DasKeyboard/q-applet-stripe",
-  "developerRepoUrl": "https://github.com/metadot/q-applet-stripe",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--stripe/issues",
+  "homePageUrl": "https://github.com/dasKeyboard/q-applet--stripe",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--stripe",
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+  "changelogUrl": "CHANGELOG.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
+  "license": "MIT",
+  "qActionUrl": "",
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "test": "mocha"
+  },
+  "engines": {
+    "das-keyboard-q": "2.4.x"
   },
   "dependencies": {
     "daskeyboard-applet": "^2.7.13",
@@ -34,11 +43,10 @@
     "applet": {
       "defaults": {}
     },
-    "requirements": {
-      "authorization": {
-        "type": "apiKey"
-      },
-      "applet": {}
+    "authorization": {
+      "type": "apiKey",
+      "hint": "Login or signup for free to get your API key",
+      "supportUrl": "https://www.stripe.com"
     }
   },
   "devDependencies": {
