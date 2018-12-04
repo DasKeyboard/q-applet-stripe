@@ -1,6 +1,6 @@
 {
   "name": "daskeyboard-applet--stripe",
-  "displayName": "Stripe Alerts",
+  "displayName": "Stripe",
   "version": "1.0.1",
   "description": "Alerts any time a new charge happens on your Stripe account.",
   "longDescription": "Watch your Das Keyboard Q tell you are getting richer when there is a new charge on your Stripe account.",
