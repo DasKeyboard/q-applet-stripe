@@ -29,10 +29,10 @@
     "test": "mocha"
   },
   "engines": {
-    "das-keyboard-q": "2.4.x"
+    "das-keyboard-q": "3.1.0"
   },
   "dependencies": {
-    "daskeyboard-applet": "^2.7.13",
+    "daskeyboard-applet": "^2.10.4",
     "stripe": "^6.12.1"
   },
   "qConfig": {
